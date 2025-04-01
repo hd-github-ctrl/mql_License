@@ -1,0 +1,11 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "sqlite",
+            "database": "${workspaceFolder:backen}/backend/cmd/data/license.db"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
+}
