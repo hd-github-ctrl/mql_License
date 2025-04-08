@@ -1,0 +1,2 @@
+# 忽略credentials.json文件
+backen/backend/cmd/credentials.json

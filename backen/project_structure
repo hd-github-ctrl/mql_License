@@ -1,0 +1,20 @@
+license-management-system/
+├── backend/
+│   ├── cmd/
+│   │   └── main.go
+│   ├── internal/
+│   │   ├── config/
+│   │   │   └── config.go
+│   │   ├── handler/
+│   │   │   ├── user.go
+│   │   │   └── license.go
+│   │   ├── middleware/
+│   │   │   └── auth.go
+│   │   ├── model/
+│   │   │   ├── user.go
+│   │   │   └── license.go
+│   │   └── database/
+│   │       └── db.go
+│   └── go.mod
+└── frontend/
+    └── pubspec.yaml 
