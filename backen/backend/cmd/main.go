@@ -17,7 +17,7 @@ func main() {
 	database.InitDB()
 	//https://docs.google.com/spreadsheets/d/1dbV6D4yW0OA6_tFISh-4ezLiXWTsTq8vkdGDhj33ofk/edit?gid=0#gid=0
 	// 初始化Google Sheets同步服务
-	enableSync := false
+	enableSync := true
 
 	sheetSync, err := handler.InitSheetSync(enableSync, "credentials.json", "1dbV6D4yW0OA6_tFISh-4ezLiXWTsTq8vkdGDhj33ofk", "Licenses")
 	if err != nil {
@@ -26,7 +26,7 @@ func main() {
 
 	// 启动Sheet监控
 	go func(enabled bool) {
-		if enabled == false {
+		if !enabled {
 			return
 		}
 		ticker := time.NewTicker(10 * time.Minute) // 每5分钟检查一次
